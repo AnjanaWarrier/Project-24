@@ -21,8 +21,8 @@ function setup() {
 	ground = new Ground(400,650,800,5);
 
 	box1 = new Box(600,650,200,20);
-	box2 = new Box(700,600,20,75);
-	box3 = new Box(500,600,20,75);
+	box2 = new Box(700,500,20,300);
+	box3 = new Box(500,500,20,300);
 
 	Engine.run(engine);
   
@@ -46,7 +46,7 @@ function draw() {
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:85,y:-85});
+		Matter.Body.applyForce(paper1.body,paper1.body.position,{x:125,y:-180});
 	}
 }
 
